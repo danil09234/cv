@@ -9,9 +9,6 @@ p {
     padding: 100px;
     gap: 150px;
 
-    /*width: 1507px;*/
-    /*height: 1067px;*/
-
     background: #262626;
     box-shadow: 0 0 20px #FFFFFF;
     border-radius: 60px;
@@ -37,7 +34,7 @@ p {
 
 @media only screen and (max-width: 1440px) {
     .card {
-        width: 620px;
+        width: 550px;
     }
 }
 
@@ -252,14 +249,12 @@ p {
 }
 
 .listItemTitle {
-    width: 100%;
-
     font-family: 'Source Code Pro', monospace;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     /* identical to box height, or 20px */
 
     display: flex;
@@ -267,6 +262,8 @@ p {
     text-decoration-line: underline;
 
     color: #FFFFFF;
+
+    width: 500px;
 }
 
 .listItemDescription {

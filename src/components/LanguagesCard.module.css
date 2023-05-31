@@ -9,6 +9,7 @@
     background: #1E1E1E;
     box-shadow: 0 0 20px #1E1E1E;
     border-radius: 90px;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -27,7 +28,7 @@
     padding: 0;
     gap: 10px;
 
-    width: 333px;
+    /*width: 333px;*/
     height: 140px;
 }
 
@@ -113,4 +114,10 @@
     text-align: center;
 
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1440px) {
+    .card {
+        width: 350px;
+    }
 }
