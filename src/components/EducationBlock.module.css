@@ -1,0 +1,88 @@
+.dataLine {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 7px 0;
+    gap: 20px;
+
+    width: 912px;
+    height: 122px;
+}
+
+.dataLine .lineDecoration {
+    background-image: url('/public/CentralProgressComponent.svg');
+    width: 108px;
+    height: 108px;
+}
+
+.dataLine:first-of-type .lineDecoration {
+    background-image: url('/public/EdgeProgressComponent.svg');
+}
+
+.dataLine:last-of-type .lineDecoration {
+    background-image: url('/public/EdgeProgressComponent.svg');
+    transform: rotate(180deg);
+}
+
+.textFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 38px;
+    gap: 5px;
+
+    width: 784px;
+}
+
+.title {
+    font-family: 'Source Code Pro', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.specializationIcon {
+    background-image: url('/public/CheckMark.svg');
+    width: 21px;
+    height: 16.91px;
+}
+
+.placeIcon {
+    background-image: url('/public/MapMark.svg');
+    width: 10px;
+    height: 15px;
+}
+
+.iconRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 5px;
+}
+
+.iconRow p {
+    font-family: 'Source Code Pro', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #9F9F9F;
+}

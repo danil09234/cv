@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import MenuBar from "./components/MenuBar";
+import MenuButton from "./components/MenuButton";
+import WelcomeBlock from "./components/WelcomeBlock";
+import Console from "./components/Console";
+import BlockWithTitle from "./components/BlockWithTitle";
+import SkillsCard from "./components/SkillsCard";
+import EducationBlock from "./components/EducationBlock";
+import LanguagesCard from "./components/LanguagesCard";
+import ContactsCard from "./components/ContactsCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+          <MenuBar>
+              <MenuButton scroll_id="welcome-block">welcome</MenuButton>
+              <MenuButton scroll_id="skills-block">skills</MenuButton>
+              <MenuButton scroll_id="projects-block">projects</MenuButton>
+              <MenuButton scroll_id="education-block">education</MenuButton>
+              <MenuButton scroll_id="languages-block">languages</MenuButton>
+              <MenuButton scroll_id="contacts-block">contacts</MenuButton>
+          </MenuBar>
+          <WelcomeBlock id="welcome-block">
+              <Console />
+          </WelcomeBlock>
+          <BlockWithTitle id="skills-block" color="black" title="professional skills">
+              <SkillsCard />
+          </BlockWithTitle>
+          <BlockWithTitle id="projects-block" color="milk" title="projects">
+
+          </BlockWithTitle>
+          <BlockWithTitle id="education-block" color="grey" title="education">
+              <EducationBlock />
+          </BlockWithTitle>
+          <BlockWithTitle id="languages-block" color="lightGreen" title="languages">
+              <LanguagesCard />
+          </BlockWithTitle>
+          <BlockWithTitle id="contacts-block" color="black" title="contacts">
+              <ContactsCard />
+          </BlockWithTitle>
+      </>
   );
 }
 

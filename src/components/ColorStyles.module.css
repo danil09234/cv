@@ -1,0 +1,28 @@
+.blackBackground {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.greyBackground {
+    background: #1E1E1E;
+}
+
+.greenBackground {
+    background: #00A68C;
+}
+
+.lightGreenBackground {
+    background: #00D2B2;
+}
+
+.milkBackground {
+    background: #ECECEC;
+}
+
+.whiteText {
+    color: #FFFFFF;
+}
+
+.greyText {
+    color: #1E1E1E;
+}

@@ -1,0 +1,88 @@
+.console {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+
+    width: 894px;
+    height: 300px;
+
+    background: #000000;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+
+    overflow: auto;
+}
+
+.topBar {
+    width: 100%;
+    height: 27px;
+
+    background: #3A373C;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    gap: 7px;
+
+    /*position: absolute;*/
+    width: 50px;
+    height: 12px;
+    left: 9px;
+    top: 8px;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background: white;
+}
+
+.button.red {
+    background: #EE5C54;
+}
+
+.button.yellow {
+    background: #F8BC45;
+}
+
+.button.green {
+    background: #5DC942;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+
+    height: 243px;
+
+    background: #1E1E1E;
+}
+
+.text {
+    width: 864px;
+    height: 24px;
+    margin: 0;
+
+    font-family: 'Source Code Pro', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
