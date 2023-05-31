@@ -8,6 +8,7 @@ import SkillsCard from "./components/SkillsCard";
 import EducationBlock from "./components/EducationBlock";
 import LanguagesCard from "./components/LanguagesCard";
 import ContactsCard from "./components/ContactsCard";
+import FooterBlock from "./components/FooterBlock";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <BlockWithTitle id="contacts-block" color="black" title="contacts">
               <ContactsCard />
           </BlockWithTitle>
+          <FooterBlock />
       </>
   );
 }
