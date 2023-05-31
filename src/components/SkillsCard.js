@@ -51,7 +51,7 @@ function SkillsCard() {
             <div className={styles.cardContent}>
                 <div className={styles.leftColumn}>
                     <Title>Main programming language:</Title>
-                    <ProgressCard image_src="/python-logo.png" progress_name="Python" progress_level={90}/>
+                    <ProgressCard image_src="./python-logo.png" progress_name="Python" progress_level={90}/>
                     <p className={styles.titleText}>For deeper interview:</p>
                     <div className={styles.list}>
                         <ListItem title="Kivy & KivyMD, Tkinter" description="building a GUI applications"/>
@@ -72,11 +72,11 @@ function SkillsCard() {
                 <div className={styles.rightColumn}>
                     <div className={styles.additionalLanguages}>
                         <Title>I used to work with:</Title>
-                        <ProgressCard image_src="/c-logo.png" progress_name="C" progress_level={65}/>
-                        <ProgressCard image_src="/c-plus-plus-logo.png" progress_name="C++" progress_level={60}/>
-                        <ProgressCard image_src="/html-5-logo.png" progress_name="HTML & CSS" progress_level={55}/>
-                        <ProgressCard image_src="/js-logo.png" progress_name="JavaScript" progress_level={20}/>
-                        <ProgressCard image_src="/react-logo.png" progress_name="React" progress_level={20}/>
+                        <ProgressCard image_src="./c-logo.png" progress_name="C" progress_level={65}/>
+                        <ProgressCard image_src="./c-plus-plus-logo.png" progress_name="C++" progress_level={60}/>
+                        <ProgressCard image_src="./html-5-logo.png" progress_name="HTML & CSS" progress_level={55}/>
+                        <ProgressCard image_src="./js-logo.png" progress_name="JavaScript" progress_level={20}/>
+                        <ProgressCard image_src="./react-logo.png" progress_name="React" progress_level={20}/>
                     </div>
                     <div className={styles.additionalInformation}>
                         <Title>In my work I’m using:</Title>
