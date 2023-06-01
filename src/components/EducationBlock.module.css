@@ -89,6 +89,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .textFrame {
+        margin-top: 57px;
+    }
     .dataLine .lineDecoration {
         background-image: url('/public/CentralProgressComponent145.svg');
 
