@@ -308,6 +308,7 @@ p {
 @media only screen and (max-width: 1000px) {
     .card {
         padding: 80px 80px 100px 80px;
+        box-shadow: 0 0 10px #FFFFFF;
     }
 
     .cardContent {
