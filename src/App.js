@@ -21,9 +21,7 @@ function App() {
               <MenuButton scroll_id="languages-block">languages</MenuButton>
               <MenuButton scroll_id="contacts-block">contacts</MenuButton>
           </MenuBar>
-          <WelcomeBlock id="welcome-block">
-              <Console />
-          </WelcomeBlock>
+          <WelcomeBlock id="welcome-block" />
           <BlockWithTitle id="skills-block" color="black" title="professional skills">
               <SkillsCard />
           </BlockWithTitle>

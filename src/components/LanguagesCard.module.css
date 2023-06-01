@@ -9,7 +9,7 @@
     background: #1E1E1E;
     box-shadow: 0 0 20px #1E1E1E;
     border-radius: 90px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .column {
@@ -29,7 +29,7 @@
     gap: 10px;
 
     /*width: 333px;*/
-    height: 140px;
+    /*height: 140px;*/
 }
 
 .title {
@@ -116,8 +116,43 @@
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1150px) {
     .card {
-        width: 350px;
+        flex-wrap: wrap;
+        width: min-content;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        border-radius: 80px;
+        gap: 80px;
+    }
+
+    .column {
+        gap: 80px;
+    }
+
+    .separator {
+        width: 130px;
+        border: 3px solid #F8BC45;
+    }
+
+    .mark div {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 32px;
+    }
+
+    .mark div.active {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 32px;
+    }
+
+    .additionalText {
+        font-size: 20px;
     }
 }

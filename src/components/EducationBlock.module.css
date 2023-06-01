@@ -5,8 +5,8 @@
     padding: 7px 0;
     gap: 20px;
 
-    width: 912px;
-    height: 122px;
+    /*width: 912px;*/
+    /*height: 122px;*/
 }
 
 .dataLine .lineDecoration {
@@ -31,7 +31,8 @@
     margin-top: 38px;
     gap: 5px;
 
-    width: 784px;
+    flex: 1;
+    /*width: 784px;*/
 }
 
 .title {
@@ -44,7 +45,7 @@
 
     display: flex;
     align-items: center;
-    text-align: center;
+    /*text-align: center;*/
     text-decoration-line: underline;
     text-transform: capitalize;
 
@@ -80,9 +81,30 @@
     /* identical to box height, or 16px */
 
     display: flex;
+    flex: 1;
     align-items: center;
-    text-align: center;
     text-transform: capitalize;
 
     color: #9F9F9F;
+}
+
+@media only screen and (max-width: 1000px) {
+    .dataLine .lineDecoration {
+        background-image: url('/public/CentralProgressComponent145.svg');
+
+        width: 145px;
+        height: 145px;
+    }
+
+    .dataLine:first-of-type .lineDecoration {
+        background-image: url('/public/EdgeProgressComponent145.svg');
+    }
+
+    .dataLine:last-of-type .lineDecoration {
+        background-image: url('/public/EdgeProgressComponent145.svg');
+    }
+
+    .iconRow p {
+        font-size: 24px;
+    }
 }

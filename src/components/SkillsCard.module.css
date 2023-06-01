@@ -19,23 +19,11 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 0;
     gap: 150px;
 
     width: auto;
-}
-
-@media only screen and (min-width: 1440px) {
-    .cardContent {
-        flex-wrap: nowrap;
-    }
-}
-
-@media only screen and (max-width: 1440px) {
-    .card {
-        width: 550px;
-    }
 }
 
 .leftColumn {
@@ -216,7 +204,7 @@ p {
     gap: 10px;
 
     width: 100%;
-    height: 41px;
+    /*height: 100px;*/
 }
 
 .listItemDot {
@@ -245,7 +233,7 @@ p {
     gap: 5px;
 
     width: 100%;
-    height: 41px;
+    /*height: 41px;*/
 }
 
 .listItemTitle {
@@ -292,4 +280,99 @@ p {
 
     width: auto;
     height: auto;
+}
+
+@media only screen and (max-width: 1500px) {
+    .cardContent {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .card {
+        padding: 90px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .card {
+        width: 550px;
+    }
+
+    .cardContent {
+        flex-wrap: wrap;
+        gap: 150px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        padding: 80px 80px 100px 80px;
+    }
+
+    .cardContent {
+        gap: 100px;
+    }
+
+    .rightColumn {
+        gap: 60px;
+    }
+
+    .separator {
+        border: 3px solid #F8BC45;
+    }
+
+    .title {
+        gap: 20px;
+    }
+
+    .titleText {
+        font-size: 32px;
+    }
+
+    .progressCard {
+        gap: 20px;
+    }
+
+    .progressCardImageContainer {
+        width: 75px;
+        height: 75px;
+    }
+
+    .progressCardProgressBarGraphics {
+        height: 27px;
+    }
+
+    .progressCardProgressFillerGraphics {
+        height: 23px;
+    }
+
+    .progressCardImage {
+        width: 75px;
+        height: 75px;
+    }
+
+    .progressCardProgressText {
+        font-size: 20px;
+    }
+
+    .list {
+        gap: 15px;
+    }
+
+    .listItem {
+        gap: 15px;
+    }
+
+    .listItemDot {
+        font-size: 32px;
+    }
+
+    .listItemTitle {
+        font-size: 24px;
+    }
+
+    .listItemDescription {
+        font-size: 20px;
+    }
 }
