@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.14cd10ac.css",
+    "main.css": "/cv/static/css/main.f0974be3.css",
     "main.js": "/cv/static/js/main.b419fd8b.js",
     "static/js/787.a71561b8.chunk.js": "/cv/static/js/787.a71561b8.chunk.js",
     "static/media/CentralProgressComponent145.svg": "/cv/static/media/CentralProgressComponent145.09e659742e9c832d3c41.svg",
     "static/media/EdgeProgressComponent145.svg": "/cv/static/media/EdgeProgressComponent145.62366e71750a7f654e18.svg",
     "static/media/CentralProgressComponent.svg": "/cv/static/media/CentralProgressComponent.83ead15a759aaa0ec50d.svg",
+    "static/media/CentralProgressComponentMini.svg": "/cv/static/media/CentralProgressComponentMini.2fee36a555eb20a6ee57.svg",
     "static/media/EdgeProgressComponent.svg": "/cv/static/media/EdgeProgressComponent.32a75c90ec5ee7bb1170.svg",
+    "static/media/EdgeProgressComponentMini.svg": "/cv/static/media/EdgeProgressComponentMini.0889c2bfc6fc37408675.svg",
     "index.html": "/cv/index.html",
     "static/media/MapMark.svg": "/cv/static/media/MapMark.6490d99349d84ddda8cc.svg",
     "static/media/CheckMark.svg": "/cv/static/media/CheckMark.e7ace761e2412586b40e.svg",
-    "main.14cd10ac.css.map": "/cv/static/css/main.14cd10ac.css.map",
+    "main.f0974be3.css.map": "/cv/static/css/main.f0974be3.css.map",
     "main.b419fd8b.js.map": "/cv/static/js/main.b419fd8b.js.map",
     "787.a71561b8.chunk.js.map": "/cv/static/js/787.a71561b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14cd10ac.css",
+    "static/css/main.f0974be3.css",
     "static/js/main.b419fd8b.js"
   ]
 }
