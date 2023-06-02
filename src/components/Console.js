@@ -6,7 +6,7 @@ function Console({zIndex, top}) {
     const yellow_button = `${styles.button} ${styles.yellow}`;
     const green_button = `${styles.button} ${styles.green}`;
 
-    let [consoleText, setConsoleText] = useState(false);
+    let [consoleText, setConsoleText] = useState(true);
 
     useEffect(() => {
         const consoleUpdateInterval = setInterval(() => {
@@ -28,7 +28,7 @@ function Console({zIndex, top}) {
             </div>
             <div className={styles.content}>
                 <p className={styles.text}>
-                    Danylo@Zahorulko:~$ Greetings and welcome to my own CV-page{consoleText ? '|' : ''}
+                    Danylo@Zahorulko:~$ Greetings and welcome to my own CV-page{consoleText ? '|' : '\u00A0'}
                 </p>
             </div>
         </div>
