@@ -10,7 +10,8 @@ function ProgressCard({image_src, progress_name, progress_level}) {
             <div className={styles.progressCardProgressBar}>
                 <div className={styles.progressCardProgressBarBlock}>
                     <div className={styles.progressCardProgressBarGraphics} />
-                    <div className={styles.progressCardProgressFillerGraphics} style={{width: 392*progress_level/100}} />
+                    <div className={styles.progressCardProgressFillerGraphics} style={
+                        {width: `calc(${progress_level}% - 8px)`}} />
                 </div>
                 <div className={styles.progressCardProgressTextBlock}>
                     <p className={styles.progressCardProgressText}>{progress_name}</p>
