@@ -1,3 +1,7 @@
+.content {
+    padding: 0 20px;
+}
+
 .dataLine {
     display: flex;
     flex-direction: row;
@@ -91,7 +95,9 @@
 @media only screen and (max-width: 1000px) {
     .textFrame {
         margin-top: 57px;
+        gap: 2px;
     }
+
     .dataLine .lineDecoration {
         background-image: url('/public/CentralProgressComponent145.svg');
 
@@ -113,5 +119,75 @@
 
     .iconRow p {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .iconRow p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .textFrame {
+        margin-top: 45px;
+        gap: 2px;
+    }
+
+    .dataLine .lineDecoration {
+        background-image: url('/public/CentralProgressComponent.svg');
+        width: 108px;
+        height: 108px;
+    }
+
+    .dataLine:first-of-type .lineDecoration {
+        background-image: url('/public/EdgeProgressComponent.svg');
+    }
+
+    .dataLine:last-of-type .lineDecoration {
+        background-image: url('/public/EdgeProgressComponent.svg');
+        transform: rotate(180deg);
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .iconRow p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .content {
+        padding: 0 10px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .iconRow p {
+        font-size: 11px;
+    }
+
+    .dataLine {
+         gap: 10px;
+     }
+}
+
+
+@media only screen and (max-width: 350px) {
+    .textFrame {
+        margin-top: 0;
+        gap: 3px;
+    }
+
+    .dataLine .lineDecoration {
+        display: none;
     }
 }
