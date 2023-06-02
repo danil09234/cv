@@ -107,7 +107,11 @@
         background-image: url('/public/EdgeProgressComponent145.svg');
     }
 
-    .iconRow p {
+    .title {
         font-size: 24px;
+    }
+
+    .iconRow p {
+        font-size: 20px;
     }
 }
