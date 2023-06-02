@@ -88,7 +88,6 @@
 
 @media only screen and (max-width: 720px) {
     .card {
-        margin: 0 5vw;
         width: 80vw;
         padding: 8.2vw 5.8vw;
         gap: 6.8vw;
@@ -96,6 +95,7 @@
     }
 
     .titleFrame {
+        width: fit-content;
         height: fit-content;
         gap: 2vw;
     }
