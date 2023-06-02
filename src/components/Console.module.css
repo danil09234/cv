@@ -6,7 +6,8 @@
     align-items: flex-start;
     padding: 0;
 
-    width: 880px;
+    width: 60%;
+    max-width: 900px;
     height: 300px;
 
     background: #000000;
@@ -87,16 +88,8 @@
     color: #FFFFFF;
 }
 
-
-@media only screen and (max-width: 1200px) {
-    .console {
-        width: 40rem;
-    }
-}
-
 @media only screen and (max-width: 1000px) {
     .console {
         height: 200px;
-        width: 495px;
     }
 }
