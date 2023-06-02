@@ -1,9 +1,8 @@
-// import './MenuBar.module.css'
 import styles from "./MenuBar.module.css";
 
-function MenuBar({children}) {
+function MenuBar({children, menuRef}) {
     return (
-        <ul className={styles.menu}>
+        <ul ref={menuRef} className={styles.menu}>
             {children}
         </ul>
     );

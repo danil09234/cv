@@ -6,7 +6,7 @@
     padding-top: 100px;
     padding-left: 0;
     padding-right: 0;
-    gap: 5rem;
+    gap: 5%;
 
     position: relative;
     width: 100%;
@@ -26,14 +26,6 @@
     user-select: none;
 }
 
-
-@media only screen and (max-width: 1300px) {
-    .welcomeBlock {
-        gap: 2rem;
-    }
-}
-
-
 @media only screen and (max-width: 1000px) {
     .welcomeBlock {
         padding-top: 80px;
@@ -42,5 +34,50 @@
 
     .myImage {
         height: 180px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .welcomeBlock {
+        padding-top: 60px;
+        height: 130px;
+    }
+
+    .myImage {
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .welcomeBlock {
+        padding-top: 40px;
+        height: 110px;
+    }
+
+    .myImage {
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .welcomeBlock {
+        padding-top: 40px;
+        height: 90px;
+    }
+
+    .myImage {
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .welcomeBlock {
+        padding-top: 40px;
+        height: 80px;
+        gap: 3%;
+    }
+
+    .myImage {
+        height: 80px;
     }
 }

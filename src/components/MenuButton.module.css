@@ -32,3 +32,25 @@
 
     color: #262626;
 }
+
+@media only screen and (max-width: 900px) {
+    .menuItem {
+        height: 22px;
+    }
+
+    .menuItemButton {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .menuItemButton {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .menuItemButton {
+        padding: 0 6px;
+    }
+}

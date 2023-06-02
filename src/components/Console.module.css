@@ -32,8 +32,8 @@
     padding: 7px;
     gap: 7px;
 
-    width: 50px;
-    height: 12px;
+    width: fit-content;
+    height: fit-content;
     left: 9px;
     top: 8px;
 }
@@ -91,5 +91,117 @@
 @media only screen and (max-width: 1000px) {
     .console {
         height: 200px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .console {
+        height: 150px;
+        border-radius: 11px;
+    }
+
+    .content {
+        padding: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .topBar {
+        height: 22px;
+    }
+
+    .buttons {
+        gap: 4px;
+    }
+
+    .button {
+        width: 9px;
+        height: 9px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .console {
+        height: 120px;
+        border-radius: 9px;
+    }
+
+    .content {
+        padding: 8px;
+        width: calc(100% - 16px);
+    }
+
+    .topBar {
+        height: 18px;
+    }
+
+    .buttons {
+        padding: 5px;
+        top: 2px;
+        gap: 4px;
+    }
+
+    .button {
+        width: 7px;
+        height: 7px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .text {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .console {
+        height: 100px;
+        border-radius: 7px;
+    }
+
+    .content {
+        padding: 6px;
+        width: calc(100% - 12px);
+    }
+
+    .topBar {
+        height: 18px;
+    }
+
+    .buttons {
+        padding: 4px;
+        top: 2px;
+        gap: 3px;
+    }
+
+    .button {
+        width: 6px;
+        height: 6px;
+    }
+
+    .text {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .console {
+        width: 63%;
+        height: 90px;
+    }
+
+    .text {
+        font-size: 8px;
     }
 }
