@@ -10,7 +10,7 @@
 }
 
 .footerBlock p {
-    height: 32px;
+    /*height: 32px;*/
 
     font-family: 'Source Code Pro', monospace;
     font-style: normal;
@@ -24,4 +24,37 @@
     text-transform: capitalize;
 
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 650px) {
+    .footerBlock {
+        padding: 50px 0;
+        gap: 10px;
+    }
+
+    .footerBlock p {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footerBlock {
+        padding: 30px 0;
+        gap: 10px;
+    }
+
+    .footerBlock p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .footerBlock {
+        padding: 30px 0;
+        gap: 5px;
+    }
+
+    .footerBlock p {
+        font-size: 14px;
+    }
 }
