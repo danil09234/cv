@@ -27,9 +27,6 @@
     align-items: center;
     padding: 0;
     gap: 10px;
-
-    /*width: 333px;*/
-    /*height: 140px;*/
 }
 
 .title {
@@ -38,7 +35,6 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
-    /* identical to box height, or 36px */
 
     display: flex;
     align-items: center;
@@ -90,7 +86,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*padding: 13px 7px;*/
+
     gap: 10px;
 
     width: 48px;
@@ -154,5 +150,63 @@
 
     .additionalText {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .card {
+        border-radius: 13vw;
+        gap: 13vw;
+    }
+
+    .column {
+        gap: 13vw;
+    }
+
+    .card {
+        margin: 0 5%;
+        padding: 15% 0;
+        width: 90%;
+    }
+
+    .languageCard {
+        gap: 1.5vw;
+    }
+
+    .title {
+        font-size: 5.5vw;
+    }
+
+    .separator {
+        width: 20vw;
+        border: 0.4vw solid #F8BC45;
+    }
+
+    .mark {
+        gap: 1vw;
+    }
+
+    .mark div {
+        width: 9vw;
+        height: 9vw;
+
+        font-size: 5vw;
+    }
+
+    .mark div.active {
+        width: 9vw;
+        height: 9vw;
+
+        font-size: 5vw;
+    }
+
+    .additionalText {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .additionalText {
+        font-size: 3.5vw;
     }
 }
