@@ -8,9 +8,6 @@
     align-items: flex-start;
     padding: 7px 0;
     gap: 20px;
-
-    /*width: 912px;*/
-    /*height: 122px;*/
 }
 
 .dataLine .lineDecoration {
@@ -36,7 +33,6 @@
     gap: 5px;
 
     flex: 1;
-    /*width: 784px;*/
 }
 
 .title {
@@ -132,10 +128,34 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .content {
+        padding: 0 10px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .iconRow p {
+        font-size: 16px;
+    }
+
+    .dataLine {
+        gap: 10px;
+    }
+}
+
+
 @media only screen and (max-width: 550px) {
     .textFrame {
         margin-top: 45px;
         gap: 2px;
+    }
+
+    .dataLine {
+        padding: 0;
+        height: 120px;
     }
 
     .dataLine .lineDecoration {
@@ -162,26 +182,47 @@
     }
 }
 
-@media only screen and (max-width: 550px) {
-    .content {
-        padding: 0 10px;
-    }
-
-    .title {
-        font-size: 12px;
-    }
-
-    .iconRow p {
-        font-size: 11px;
+@media only screen and (max-width: 470px) {
+    .textFrame {
+        margin-top: 38px;
+        gap: 2px;
     }
 
     .dataLine {
-         gap: 10px;
-     }
+        padding: 0;
+        height: 115px;
+    }
+
+    .dataLine .lineDecoration {
+        background-image: url('/public/CentralProgressComponentMini.svg');
+        width: 90px;
+        height: 90px;
+    }
+
+    .dataLine:first-of-type .lineDecoration {
+        background-image: url('/public/EdgeProgressComponentMini.svg');
+    }
+
+    .dataLine:last-of-type .lineDecoration {
+        background-image: url('/public/EdgeProgressComponentMini.svg');
+        transform: rotate(180deg);
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .iconRow p {
+        font-size: 13px;
+    }
 }
 
+@media only screen and (max-width: 380px) {
+    .dataLine {
+        padding: 15px 0;
+        height: min-content;
+    }
 
-@media only screen and (max-width: 350px) {
     .textFrame {
         margin-top: 0;
         gap: 3px;
@@ -189,5 +230,15 @@
 
     .dataLine .lineDecoration {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .title {
+        font-size: 14px;
+    }
+
+    .iconRow p {
+        font-size: 12px;
     }
 }
