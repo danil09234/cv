@@ -12,6 +12,8 @@ p {
     background: #262626;
     box-shadow: 0 0 20px #FFFFFF;
     border-radius: 60px;
+
+    width: min-content;
 }
 
 .cardContent {
@@ -23,7 +25,7 @@ p {
     padding: 0;
     gap: 150px;
 
-    width: auto;
+    width: min-content;
 }
 
 .leftColumn {
@@ -84,7 +86,6 @@ p {
     padding: 0;
     gap: 15px;
 
-    width: 485px;
     height: 70px;
 }
 
@@ -95,17 +96,6 @@ p {
     user-select: none;
 }
 
-.progressCardImageContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-
-    width: 70px;
-    height: 70px;
-}
-
 .progressCardProgressBar {
     display: flex;
     flex-direction: column;
@@ -113,8 +103,8 @@ p {
     gap: 5px;
     margin-top: 24px;
 
-    width: 400px;
-    height: 60px;
+    width: min-content;
+    /*height: 60px;*/
 }
 
 .progressCardProgressBarGraphics {
@@ -203,7 +193,7 @@ p {
     padding: 0;
     gap: 10px;
 
-    width: 100%;
+    width: fit-content;
     /*height: 100px;*/
 }
 
@@ -232,7 +222,7 @@ p {
     padding: 0;
     gap: 5px;
 
-    width: 100%;
+    width: fit-content;
     /*height: 41px;*/
 }
 
@@ -249,12 +239,14 @@ p {
 
     color: #FFFFFF;
 
-    width: 500px;
+    width: fit-content;
+    /*block-size: fit-content;*/
+    /*width: 500px;*/
 }
 
 .listItemDescription {
-    width: 100%;
-    height: 16px;
+    width: fit-content;
+    /*height: 16px;*/
 
     font-family: 'Source Code Pro', monospace;
     font-style: normal;
@@ -292,11 +284,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 1350px) {
-    .card {
-        width: 550px;
-    }
-
+@media only screen and (max-width: 1300px) {
     .cardContent {
         flex-wrap: wrap;
         gap: 150px;
@@ -331,11 +319,6 @@ p {
 
     .progressCard {
         gap: 20px;
-    }
-
-    .progressCardImageContainer {
-        width: 75px;
-        height: 75px;
     }
 
     .progressCardProgressBar {
@@ -377,5 +360,286 @@ p {
 
     .listItemDescription {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .card {
+        padding: 60px 50px 50px 50px;
+    }
+
+    .titleText {
+        font-size: 24px;
+    }
+
+    .progressCardProgressBarBlock {
+        width: 295px;
+    }
+
+    .progressCardProgressBarGraphics {
+        width: 292px;
+    }
+
+    .progressCardProgressTextBlock {
+        width: 295px;
+    }
+
+    .progressCardProgressText {
+        font-size: 16px;
+    }
+
+    .listItem {
+        width: 450px;
+    }
+
+    .listItemDot {
+        font-size: 24px;
+    }
+
+    .listItemTitle {
+        font-size: 24px;
+    }
+
+    .listItemDescription {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .titleText {
+        font-size: 20px;
+    }
+
+    .listItem {
+        width: 380px;
+    }
+
+    .listItemTitle {
+        font-size: 20px;
+    }
+
+    .listItemDescription {
+        font-size: 16px;
+    }
+
+    .progressCardProgressText {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .card {
+        padding: 40px 40px 50px 40px;
+    }
+
+    .title {
+        gap: 5px;
+    }
+
+    .separator {
+        border: 2px solid #F8BC45;
+        width: 150px;
+    }
+
+    .cardContent {
+        gap: 50px;
+    }
+
+    .leftColumn {
+        gap: 10px;
+    }
+
+    .rightColumn {
+        gap: 40px;
+    }
+
+    .additionalLanguages {
+        gap: 10px;
+    }
+
+    .progressCardImage {
+        width: 60px;
+        height: auto;
+    }
+
+    .titleText {
+        font-size: 16px;
+    }
+
+    .progressCard {
+        gap: 10px;
+    }
+
+    .progressCardProgressBar {
+        gap: 5px;
+    }
+
+    .progressCardProgressBarBlock {
+        width: 245px;
+        height: 25px;
+    }
+
+    .progressCardProgressBarGraphics {
+        width: 242px;
+        height: 23px;
+    }
+
+    .progressCardProgressFillerGraphics {
+        height: 19px;
+        left: 5px;
+    }
+
+    .progressCardProgressTextBlock {
+        width: 245px;
+    }
+
+    .progressCardProgressText {
+        font-size: 14px;
+    }
+
+    .listItem {
+        width: 320px;
+        gap: 5px;
+    }
+
+    .listItemDot {
+        font-size: 20px;
+    }
+
+    .listItemTitle {
+        font-size: 16px;
+    }
+
+    .listItemDescription {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .titleText {
+        font-size: 14px;
+    }
+
+    .separator {
+        width: 130px;
+    }
+
+    .progressCardImage {
+        width: 50px;
+        height: auto;
+    }
+
+    .progressCardProgressBarBlock {
+        width: 195px;
+        height: 23px;
+    }
+
+    .progressCardProgressBarGraphics {
+        width: 192px;
+        height: 19px;
+    }
+
+    .progressCardProgressFillerGraphics {
+        height: 15px;
+        left: 5px;
+    }
+
+    .progressCardProgressTextBlock {
+        width: 195px;
+    }
+
+    .listItem {
+        width: 250px;
+    }
+
+    .listItemDot {
+        font-size: 14px;
+    }
+
+    .listItemTitle {
+        font-size: 12px;
+    }
+
+    .listItemDescription {
+        font-size: 11px;
+    }
+
+    .progressCardProgressText {
+        font-size: 11px;
+    }
+
+    .progressCardProgressBar {
+        gap: 3px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card {
+        border-radius: 40px;
+        padding: 25px 25px 35px 25px;
+    }
+
+    .titleText {
+        font-size: 12px;
+    }
+
+    .rightColumn {
+        gap: 20px;
+    }
+
+    .progressCardProgressBar {
+        gap: 0;
+        margin-top: 10px;
+    }
+
+    .progressCard {
+        height: 45px;
+    }
+
+    .progressCardImage {
+        width: 40px;
+        height: auto;
+    }
+
+    .progressCardProgressBarBlock {
+        width: 145px;
+        height: 23px;
+    }
+
+    .progressCardProgressBarGraphics {
+        width: 142px;
+    }
+
+    .progressCardProgressFillerGraphics {
+        height: 15px;
+        left: 4px;
+    }
+
+    .progressCardProgressTextBlock {
+        width: 145px;
+    }
+
+    .list {
+        gap: 7px;
+    }
+
+    .listItem {
+        width: 200px;
+    }
+
+    .listItemTitle {
+        font-size: 12px;
+    }
+
+    .listItemDescription {
+        font-size: 10px;
+    }
+
+    .progressCardProgressText {
+        font-size: 10px;
+    }
+
+    .additionalInformation {
+        gap: 10px;
     }
 }

@@ -4,9 +4,7 @@ import styles from './SkillsCard.module.css'
 function ProgressCard({image_src, progress_name, progress_level}) {
     return (
         <div className={styles.progressCard}>
-            <div className={styles.progressCardImageContainer}>
-                <img className={styles.progressCardImage} src={image_src} alt={progress_name}/>
-            </div>
+            <img className={styles.progressCardImage} src={image_src} alt={progress_name}/>
             <div className={styles.progressCardProgressBar}>
                 <div className={styles.progressCardProgressBarBlock}>
                     <div className={styles.progressCardProgressBarGraphics} />
