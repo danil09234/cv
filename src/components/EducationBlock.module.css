@@ -217,14 +217,14 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 410px) {
     .dataLine {
         padding: 0;
         height: 104px;
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 360px) {
     .dataLine {
         padding: 15px 0;
         height: min-content;
