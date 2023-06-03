@@ -1,4 +1,5 @@
 import styles from "./ContactsCard.module.css"
+import getImage from "../utils/mediaUtils";
 
 
 function ContactCard({image_scr, image_alt, children}) {
@@ -19,9 +20,9 @@ function ContactsCard() {
                 <p>Contact me</p>
             </div>
             <div className={styles.contactsFrame}>
-                <ContactCard image_scr="./telegramIcon.png" alt="Telegram">@danil09234</ContactCard>
-                <ContactCard image_scr="./emailIcon.png" alt="Email">dailzag05@gmail.com</ContactCard>
-                <ContactCard image_scr="./gitHubIcon.png" alt="Git Hub">danil09234</ContactCard>
+                <ContactCard image_scr={getImage("/telegramIcon.png")} image_alt="Telegram">@danil09234</ContactCard>
+                <ContactCard image_scr={getImage("/emailIcon.png")} image_alt="Email">dailzag05@gmail.com</ContactCard>
+                <ContactCard image_scr={getImage("/gitHubIcon.png")} image_alt="Git Hub">danil09234</ContactCard>
             </div>
         </div>
     );

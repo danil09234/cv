@@ -2,6 +2,7 @@ import styles from './WelcomeBlock.module.css'
 import colors from './ColorStyles.module.css'
 import Console from "./Console";
 import {useEffect, useState} from "react";
+import getImage from "../utils/mediaUtils";
 
 
 function WelcomeBlock({id}) {
@@ -31,7 +32,7 @@ function WelcomeBlock({id}) {
 
     return (
         <div id={id} className={`${styles.welcomeBlock} ${colors.greenBackground}`}>
-            <img style={{top: imageTop}} className={styles.myImage} src="./MeWithoutABackground.png"  alt="Me"/>
+            <img style={{top: imageTop}} className={styles.myImage} src={getImage("/MeWithoutABackground.png")} alt="Me"/>
             <Console zIndex={1} top={`${consoleTop}px`}/>
         </div>
     )

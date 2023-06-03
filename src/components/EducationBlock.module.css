@@ -128,7 +128,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 610px) {
     .content {
         padding: 0 10px;
     }
@@ -147,7 +147,7 @@
 }
 
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 580px) {
     .textFrame {
         margin-top: 45px;
         gap: 2px;
@@ -155,7 +155,7 @@
 
     .dataLine {
         padding: 0;
-        height: 120px;
+        height: 117px;
     }
 
     .dataLine .lineDecoration {
@@ -182,7 +182,7 @@
     }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 480px) {
     .textFrame {
         margin-top: 38px;
         gap: 2px;
@@ -190,7 +190,7 @@
 
     .dataLine {
         padding: 0;
-        height: 115px;
+        height: 98px;
     }
 
     .dataLine .lineDecoration {
@@ -209,11 +209,18 @@
     }
 
     .title {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .iconRow p {
-        font-size: 13px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .dataLine {
+        padding: 0;
+        height: 104px;
     }
 }
 
@@ -230,15 +237,5 @@
 
     .dataLine .lineDecoration {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    .title {
-        font-size: 14px;
-    }
-
-    .iconRow p {
-        font-size: 12px;
     }
 }
