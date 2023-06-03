@@ -2,14 +2,14 @@ import './App.css';
 import MenuBar from "./components/MenuBar";
 import MenuButton from "./components/MenuButton";
 import WelcomeBlock from "./components/WelcomeBlock";
-import Console from "./components/Console";
 import BlockWithTitle from "./components/BlockWithTitle";
 import SkillsCard from "./components/SkillsCard";
 import EducationBlock from "./components/EducationBlock";
 import LanguagesCard from "./components/LanguagesCard";
 import ContactsCard from "./components/ContactsCard";
 import FooterBlock from "./components/FooterBlock";
-import {useEffect, useLayoutEffect, useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
+
 
 function App() {
     const [menuHeight, setMenuHeight] = useState()
@@ -20,7 +20,6 @@ function App() {
             const { height } = menuRef.current.getBoundingClientRect();
             if (height === menuHeight) return;
             setMenuHeight(height);
-            console.log("Resized " + height);
         }
     };
 
