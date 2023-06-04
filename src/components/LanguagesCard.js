@@ -37,15 +37,40 @@ function LanguageCard({language_name, language_level, additional_text}) {
 
 
 function LanguagesCard() {
+    let languages_list = [
+        {
+            "name": "Ukrainian",
+            "level": "6",
+            "additional": "Native-speaker"
+        },
+        {
+            "name": "English",
+            "level": "4",
+            "additional": "Preparing for TOEFL..."
+        },
+        {
+            "name": "Slovak",
+            "level": "3",
+            "additional": "In active use..."
+        },
+        {
+            "name": "Russian",
+            "level": "6",
+            "additional": "Native-speaker"
+        }
+    ];
+
+    languages_list = languages_list.map(({name, level, additional}, index) => {
+        return <LanguageCard key={index} language_name={name} language_level={level} additional_text={additional} />
+    });
+
     return (
         <div className={styles.card}>
             <div className={styles.column}>
-                <LanguageCard language_name="Ukrainian" language_level="6" additional_text="Native-speaker" />
-                <LanguageCard language_name="English" language_level="4" additional_text="Preparing for TOEFL..." />
+                {languages_list.slice(0, 2)}
             </div>
             <div className={styles.column}>
-                <LanguageCard language_name="Slovak" language_level="3" additional_text="In active use..." />
-                <LanguageCard language_name="Russian" language_level="6" additional_text="Native-speaker" />
+                {languages_list.slice(2, 4)}
             </div>
         </div>
     );
