@@ -46,6 +46,112 @@ function ListItem({title, description}) {
 
 
 function SkillsCard() {
+    let deeper_interview_list = [
+        {
+            "title": "Kivy & KivyMD, Tkinter",
+            "description": "building a GUI applications"
+        },
+        {
+            "title": "Telebot, Aiogram",
+            "description": "building Telegram bots"
+        },
+        {
+            "title": "Loguru",
+            "description": "logging and catching bugs"
+        },
+        {
+            "title": "Sqlite3",
+            "description": "storing the data"
+        },
+        {
+            "title": "Click",
+            "description": "building console applications"
+        },
+        {
+            "title": "Threading",
+            "description": "separating one process"
+        },
+        {
+            "title": "Multiprocessing",
+            "description": "running tasks on a separate cores"
+        },
+        {
+            "title": "Pyinstaller",
+            "description": "creating an executables"
+        },
+        {
+            "title": "Venv",
+            "description": "separating projects working-spaces"
+        },
+        {
+            "title": "Openpyexcel",
+            "description": "generate reports for the target user"
+        },
+        {
+            "title": "Selenium",
+            "description": "automate the work with the browser"
+        },
+        {
+            "title": "BeautifulSoup & requests",
+            "description": "parsing a web-sites"
+        },
+        {
+            "title": "UnitTests",
+            "description": "testing and debugging code"
+        }
+    ]
+
+    deeper_interview_list = deeper_interview_list.map(({title, description}, index) => {
+        return <ListItem key={index} title={title} description={description} />;
+    })
+
+    let additional_languages_list = [
+        {
+            "language": "C",
+            "src": "/c-logo.png",
+            "level": 65
+        },
+        {
+            "language": "C++",
+            "src": "/c-plus-plus-logo.png",
+            "level": 60
+        },
+        {
+            "language": "HTML & CSS",
+            "src": "/html-5-logo.png",
+            "level": 55
+        },
+        {
+            "language": "JavaScript",
+            "src": "/js-logo.png",
+            "level": 20
+        },
+        {
+            "language": "React",
+            "src": "/react-logo.png",
+            "level": 20
+        }
+    ]
+
+    additional_languages_list = additional_languages_list.map(({language, src, level}, index) => {
+        return <ProgressCard key={index} image_src={getImage(src)} progress_name={language} progress_level={level} />
+    })
+
+    let development_approaches_list = [
+        {
+            "title": "Object Oriented Programming / Functional Programming",
+            "description": "Depending on a specific task"
+        },
+        {
+            "title": "Data structures & Databases",
+            "description": "Because data is almost everywhere"
+        }
+    ]
+
+    development_approaches_list = development_approaches_list.map(({title, description}, index) => {
+        return <ListItem key={index} title={title} description={description} />
+    })
+
     return (
         <div className={styles.card}>
             <div className={styles.cardContent}>
@@ -54,37 +160,18 @@ function SkillsCard() {
                     <ProgressCard image_src={getImage("/python-logo.png")} progress_name="Python" progress_level={90}/>
                     <p className={styles.titleText}>For deeper interview:</p>
                     <div className={styles.list}>
-                        <ListItem title="Kivy & KivyMD, Tkinter" description="building a GUI applications"/>
-                        <ListItem title="Telebot, Aiogram" description="building Telegram bots"/>
-                        <ListItem title="Loguru" description="logging and catching bugs"/>
-                        <ListItem title="Sqlite3" description="storing the data"/>
-                        <ListItem title="Click" description="building console applications"/>
-                        <ListItem title="Threading" description="separating one process"/>
-                        <ListItem title="Multiprocessing" description="running tasks on a separate cores"/>
-                        <ListItem title="Pyinstaller" description="creating an executables"/>
-                        <ListItem title="Venv" description="separating projects working-spaces"/>
-                        <ListItem title="Openpyexcel" description="generate reports for the target user"/>
-                        <ListItem title="Selenium" description="automate the work with the browser"/>
-                        <ListItem title="BeautifulSoup & requests" description="parsing a web-sites"/>
-                        <ListItem title="UnitTests" description="testing and debugging code"/>
+                        {deeper_interview_list}
                     </div>
                 </div>
                 <div className={styles.rightColumn}>
                     <div className={styles.additionalLanguages}>
                         <Title>I used to work with:</Title>
-                        <ProgressCard image_src={getImage("/c-logo.png")} progress_name="C" progress_level={65}/>
-                        <ProgressCard image_src={getImage("/c-plus-plus-logo.png")} progress_name="C++" progress_level={60}/>
-                        <ProgressCard image_src={getImage("/html-5-logo.png")} progress_name="HTML & CSS" progress_level={55}/>
-                        <ProgressCard image_src={getImage("/js-logo.png")} progress_name="JavaScript" progress_level={20}/>
-                        <ProgressCard image_src={getImage("/react-logo.png")} progress_name="React" progress_level={20}/>
+                        {additional_languages_list}
                     </div>
                     <div className={styles.additionalInformation}>
                         <Title>In my work I’m using:</Title>
                         <div className={styles.list}>
-                            <ListItem title="Object Oriented Programming / Functional Programming"
-                                      description="Depending on a specific task"/>
-                            <ListItem title="Data structures & Databases"
-                                      description="Because data is almost everywhere" />
+                            {development_approaches_list}
                         </div>
                     </div>
                 </div>
