@@ -47,7 +47,7 @@ function App() {
             <BlockWithTitle id="skills-block" color="black" title="professional skills">
                 <SkillsCard />
             </BlockWithTitle>
-            <BlockWithTitle id="projects-block" color="milk" title="projects">
+            <BlockWithTitle id="projects-block" color="milk" title="projects" display="none">
 
             </BlockWithTitle>
             <BlockWithTitle id="education-block" color="grey" title="education">

@@ -1,7 +1,7 @@
 import styles from './BlockWithTitle.module.css'
 import colors from './ColorStyles.module.css'
 
-function BlockWithTitle({id, color, title, children, zIndex}) {
+function BlockWithTitle({id, color, title, children, zIndex, display}) {
     let color_background = '';
     let color_text = '';
 
@@ -27,7 +27,7 @@ function BlockWithTitle({id, color, title, children, zIndex}) {
     }
 
     return (
-        <section id={id} style={{zIndex: zIndex}} className={`${styles.block} ${color_background}`}>
+        <section id={id} style={{zIndex: zIndex, display: display}} className={`${styles.block} ${color_background}`}>
             <p className={`${styles.title} ${color_text}`}>{title}</p>
             {children}
         </section>
