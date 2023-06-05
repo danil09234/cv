@@ -44,6 +44,7 @@
     border-radius: 50%;
 
     background: white;
+    transition: filter 0.3s
 }
 
 .button.red {
@@ -56,6 +57,10 @@
 
 .button.green {
     background: #5DC942;
+}
+
+.button:hover {
+    filter: brightness(85%);
 }
 
 .content {
