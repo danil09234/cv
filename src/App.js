@@ -38,7 +38,7 @@ function App() {
             <MenuBar menuRef={menuRef}>
                 <MenuButton scroll_id="welcome-block">welcome</MenuButton>
                 <MenuButton scroll_id="skills-block">skills</MenuButton>
-                <MenuButton scroll_id="projects-block">projects</MenuButton>
+                {/*<MenuButton scroll_id="projects-block">projects</MenuButton>*/}
                 <MenuButton scroll_id="education-block">education</MenuButton>
                 <MenuButton scroll_id="languages-block">languages</MenuButton>
                 <MenuButton scroll_id="contacts-block">contacts</MenuButton>
