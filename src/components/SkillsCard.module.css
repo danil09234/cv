@@ -10,7 +10,7 @@ p {
     gap: 150px;
 
     background: #262626;
-    box-shadow: 0 0 20px #FFFFFF;
+    box-shadow: 0 0 20px #1E1E1E;
     border-radius: 60px;
 
     width: min-content;
@@ -294,7 +294,6 @@ p {
 @media only screen and (max-width: 1000px) {
     .card {
         padding: 80px 80px 100px 80px;
-        box-shadow: 0 0 10px #FFFFFF;
     }
 
     .cardContent {
