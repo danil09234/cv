@@ -3,6 +3,8 @@ import colors from './ColorStyles.module.css'
 import Console from "./Console";
 import {useEffect, useState} from "react";
 import getImage from "../utils/mediaUtils";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 function WelcomeBlock({id}) {
@@ -24,7 +26,7 @@ function WelcomeBlock({id}) {
     }, []);
 
     useEffect(() => {
-        if (scrollPosition < 400) {
+        if (0 <= scrollPosition && scrollPosition <= 400) {
             setConsoleTop(10 * scrollPosition / 400)
             setImageTop(20 * scrollPosition / 400)
         }
@@ -32,7 +34,10 @@ function WelcomeBlock({id}) {
 
     return (
         <div id={id} className={`${styles.welcomeBlock} ${colors.greenBackground}`}>
-            <img style={{top: imageTop}} className={styles.myImage} src={getImage("/MeWithoutABackground.png")} alt="Me"/>
+            <div style={{top: imageTop}} className={styles.myImage}>
+                <LazyLoadImage className={styles.myImage} src={getImage("/MeWithoutABackground.png")} alt="Me"
+                               effect="blur" threshold={1500} />
+            </div>
             <Console zIndex={1} top={`${consoleTop}px`}/>
         </div>
     )

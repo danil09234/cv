@@ -1,11 +1,14 @@
 import styles from './SkillsCard.module.css'
 import getImage from "../utils/mediaUtils";
+import {LazyLoadImage} from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 function ProgressCard({image_src, progress_name, progress_level}) {
     return (
         <div className={styles.progressCard}>
-            <img className={styles.progressCardImage} src={image_src} alt={progress_name}/>
+            <LazyLoadImage className={styles.progressCardImage} src={image_src} alt={progress_name} effect="blur"
+                           threshold={500} />
             <div className={styles.progressCardProgressBar}>
                 <div className={styles.progressCardProgressBarBlock}>
                     <div className={styles.progressCardProgressBarGraphics} />
