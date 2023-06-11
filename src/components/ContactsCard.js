@@ -1,11 +1,12 @@
 import styles from "./ContactsCard.module.css"
 import getImage from "../utils/mediaUtils";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 
 function ContactCard({image_scr, image_alt, children}) {
     return (
         <div className={styles.contactCard}>
-            <img src={image_scr} alt={image_alt} />
+            <LazyLoadImage src={image_scr} alt={image_alt} effect="blur" threshold={500} />
             <p>{children}</p>
         </div>
     );
