@@ -12,6 +12,8 @@ function WelcomeBlock({id}) {
     const [imageTop, setImageTop] = useState(0);
 
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [myImage, setMyImage] = useState(new Image(getImage("/MeWithoutABackgroundMini.png")));
+
     const handleScroll = () => {
         const position = window.scrollY;
         setScrollPosition(position);
@@ -32,11 +34,14 @@ function WelcomeBlock({id}) {
         }
     }, [scrollPosition])
 
+    useEffect(() => {
+
+    });
+
     return (
         <div id={id} className={`${styles.welcomeBlock} ${colors.greenBackground}`}>
             <div style={{top: imageTop}} className={styles.myImage}>
-                <LazyLoadImage className={styles.myImage} src={getImage("/MeWithoutABackground.png")} alt="Me"
-                               effect="blur" threshold={1500} />
+                <img className={styles.myImage} src={getImage("/MeWithoutABackground.png")} alt="Me" />
             </div>
             <Console zIndex={1} top={`${consoleTop}px`}/>
         </div>
