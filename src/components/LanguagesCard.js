@@ -50,7 +50,7 @@ function LanguagesCard() {
         },
         {
             "name": "Slovak",
-            "level": "3",
+            "level": "4",
             "additional": "In active use..."
         },
         {
