@@ -6,7 +6,7 @@ function FooterBlock() {
         <footer className={`${styles.footerBlock} ${colors.greyBackground}`}>
             <p>CV-page</p>
             <p>Author: Danylo Zahorulko</p>
-            <p>© 2023</p>
+            <p>© 2024</p>
         </footer>
     );
 }
