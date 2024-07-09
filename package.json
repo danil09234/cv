@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "version": "0.1.0",
-  "homepage": "https://danylo.zahorulko.com",
+  "homepage": "https://danil09234.github.io/cv/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
