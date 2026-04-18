@@ -1,23 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c3dd6be.css",
-    "main.js": "/static/js/main.0283e49a.js",
-    "static/js/787.a71561b8.chunk.js": "/static/js/787.a71561b8.chunk.js",
-    "static/media/CentralProgressComponent145.svg": "/static/media/CentralProgressComponent145.09e659742e9c832d3c41.svg",
-    "static/media/EdgeProgressComponent145.svg": "/static/media/EdgeProgressComponent145.62366e71750a7f654e18.svg",
-    "static/media/CentralProgressComponent.svg": "/static/media/CentralProgressComponent.83ead15a759aaa0ec50d.svg",
-    "static/media/CentralProgressComponentMini.svg": "/static/media/CentralProgressComponentMini.2fee36a555eb20a6ee57.svg",
-    "static/media/EdgeProgressComponent.svg": "/static/media/EdgeProgressComponent.32a75c90ec5ee7bb1170.svg",
-    "static/media/EdgeProgressComponentMini.svg": "/static/media/EdgeProgressComponentMini.0889c2bfc6fc37408675.svg",
+    "main.css": "/static/css/main.d6280f2a.css",
+    "main.js": "/static/js/main.9d1b8bbd.js",
     "index.html": "/index.html",
-    "static/media/MapMark.svg": "/static/media/MapMark.6490d99349d84ddda8cc.svg",
-    "static/media/CheckMark.svg": "/static/media/CheckMark.e7ace761e2412586b40e.svg",
-    "main.2c3dd6be.css.map": "/static/css/main.2c3dd6be.css.map",
-    "main.0283e49a.js.map": "/static/js/main.0283e49a.js.map",
-    "787.a71561b8.chunk.js.map": "/static/js/787.a71561b8.chunk.js.map"
+    "main.d6280f2a.css.map": "/static/css/main.d6280f2a.css.map",
+    "main.9d1b8bbd.js.map": "/static/js/main.9d1b8bbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c3dd6be.css",
-    "static/js/main.0283e49a.js"
+    "static/css/main.d6280f2a.css",
+    "static/js/main.9d1b8bbd.js"
   ]
 }
