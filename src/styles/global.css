@@ -59,7 +59,7 @@ body::before {
   50%      { transform: translateY(5px); opacity: 1; }
 }
 
-/* Collapse corner chrome labels on small screens */
+/* Collapse corner chrome labels on small screens, and hide the progress rail */
 @media (max-width: 720px) {
   .two-col { grid-template-columns: 1fr !important; gap: 48px !important; }
 
@@ -69,4 +69,6 @@ body::before {
   .chrome-anchor      { top: 18px !important; right: 18px !important; font-size: 10px !important; letter-spacing: 0.18em !important; }
   .chrome-anchor-full { display: none !important; }
   .chrome-anchor-short { display: inline !important; }
+
+  .progress-rail { display: none !important; }
 }

@@ -2,6 +2,7 @@
 export default function ProgressRail({ progress }) {
   return (
     <div
+      className="progress-rail"
       style={{
         position: 'fixed', top: '12vh', bottom: '12vh', right: 24, zIndex: 20,
         width: 1, pointerEvents: 'none',
