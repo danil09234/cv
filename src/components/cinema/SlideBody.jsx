@@ -8,7 +8,7 @@ export default function SlideBody({ slide, localProgress }) {
   if (slide.kind === 'name')      return <NameSlide />;
   if (slide.kind === 'statement') return <StatementSlide text={slide.text} />;
   if (slide.kind === 'brand')     return <BrandSlide slide={slide} localProgress={localProgress} />;
-  if (slide.kind === 'contact')   return <ContactAct visible={1} email={slide.email} links={slide.links} />;
+  if (slide.kind === 'contact')   return <ContactAct links={slide.links} />;
   return null;
 }
 

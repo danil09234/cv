@@ -1,18 +1,19 @@
 import { useState } from 'react';
 
-// The final act: email front and centre, clickable to copy, with a small row
-// of social links beneath.
-export default function ContactAct({ visible, email, links }) {
+// The contact slide: email front and centre, clickable to copy, with a small
+// row of social links beneath. Visibility/pointer-events are handled by the
+// parent slide wrapper in CinematicStack — this component just renders.
+export default function ContactAct({ links }) {
   const [copied, setCopied] = useState(false);
 
   const onCopy = async (e) => {
     e.preventDefault();
     try {
-      await navigator.clipboard.writeText(email);
+      await navigator.clipboard.writeText(links.email);
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     } catch {
-      window.location.href = 'mailto:' + email;
+      window.location.href = 'mailto:' + links.email;
     }
   };
 
@@ -25,11 +26,8 @@ export default function ContactAct({ visible, email, links }) {
   return (
     <div
       style={{
-        position: 'absolute', inset: 0,
-        display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
-        padding: '0 var(--pad-x)',
-        opacity: visible,
-        pointerEvents: visible > 0.5 ? 'auto' : 'none',
+        display: 'flex', flexDirection: 'column',
+        justifyContent: 'center', alignItems: 'center',
       }}
     >
       <div
@@ -43,7 +41,7 @@ export default function ContactAct({ visible, email, links }) {
       </div>
 
       <a
-        href={'mailto:' + email}
+        href={'mailto:' + links.email}
         onClick={onCopy}
         style={{
           fontFamily: 'var(--font-display)',
@@ -58,7 +56,7 @@ export default function ContactAct({ visible, email, links }) {
         onMouseEnter={(e) => (e.currentTarget.style.borderBottomColor = 'var(--fg)')}
         onMouseLeave={(e) => (e.currentTarget.style.borderBottomColor = 'var(--rule-strong)')}
       >
-        {email}
+        {links.email}
       </a>
 
       <div

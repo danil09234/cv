@@ -82,6 +82,6 @@ function buildSlides(data) {
       href: 'https://sudolabs.com',
       role: 'AI Engineer',
     },
-    { kind: 'contact', email: data.contact.email, links: data.contact },
+    { kind: 'contact', links: data.contact },
   ];
 }
